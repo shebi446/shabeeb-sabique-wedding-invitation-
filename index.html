@@ -117,11 +117,11 @@
     .mob-toggle.open span:nth-child(2){opacity:0}
     .mob-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
     @media(max-width:768px){
-      .mob-toggle{display:flex}
-      #nav{flex-direction:column;height:auto;padding:68px 20px 28px;gap:2px;transform:translateY(-100%);max-height:100vh;max-height:100dvh;overflow-y:auto}
+      .mob-toggle{display:flex;width:48px;height:48px;top:14px;right:14px}
+      #nav{flex-direction:column;height:auto;padding:76px 20px 32px;gap:4px;transform:translateY(-100%);max-height:100vh;max-height:100dvh;overflow-y:auto}
       #nav.show.open{transform:translateY(0)}
       #nav.show:not(.open){transform:translateY(-100%)}
-      #nav a{font-size:.72rem;padding:14px 20px;width:100%;text-align:center;border-radius:14px;letter-spacing:4px}
+      #nav a{font-size:.82rem;padding:16px 20px;width:100%;text-align:center;border-radius:16px;letter-spacing:4px;min-height:48px;display:flex;align-items:center;justify-content:center}
       #nav a:active{background:var(--glass2)}
     }
     #progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--rose),var(--gold2));z-index:99999;width:0;transition:none}
@@ -469,91 +469,116 @@
 
     /* ===== TINY SCREENS (280-320px: Galaxy Fold, small feature phones) ===== */
     @media(max-width:320px){
-      .hero-content{padding:14px 8px}
-      section{padding-left:8px;padding-right:8px}
-      .hero-name{font-size:2rem}
-      .h-amp{font-size:2.2rem}
-      .h-bis{font-size:.95rem}
-      .h-label{font-size:.42rem;letter-spacing:1.5px;line-height:1.6}
-      .h-date-item{padding:6px 10px}
-      .h-date-item .big{font-size:1.1rem}
-      .h-cta{padding:8px 16px;font-size:.48rem;letter-spacing:1.5px}
-      .sec-title{font-size:1.5rem}
-      .sec-label{font-size:.42rem;letter-spacing:2px}
-      .cd-num{font-size:1.5rem}
-      .cd-label{font-size:.38rem;letter-spacing:1px}
-      .cd-item{padding:10px 6px;border-radius:10px}
-      .couple-card{padding:18px 10px}
-      .c-photo{width:100px;height:100px}
-      .c-logo{width:60px;height:60px}
-      .c-name{font-size:1.15rem}
-      .c-role{font-size:.4rem;letter-spacing:2px}
-      .c-desc{font-size:.8rem;line-height:1.7}
-      .couple-divider .heart-g{width:36px;height:36px;font-size:1rem}
-      .story-dot{width:32px;height:32px;font-size:.8rem}
-      .story-card{padding:14px 10px}
-      .story-card h3{font-size:1.1rem}
-      .story-card .s-date{font-size:.4rem;letter-spacing:2px}
-      .story-card p{font-size:.78rem}
-      .cer-card{padding:18px 10px}
-      .cer-card h3{font-size:1.3rem}
-      .cer-block .val{font-size:.9rem}
-      .cer-block .lbl{font-size:.4rem}
-      .cer-btn{padding:8px 16px;font-size:.48rem;letter-spacing:1.5px}
-      .bless-card{padding:18px 10px}
-      .bless-quran{font-size:1rem;line-height:2}
-      .bless-trans{font-size:.82rem}
-      .bless-dua{padding:14px 10px}
-      .bless-dua h4{font-size:.42rem;letter-spacing:3px}
-      .bless-dua p{font-size:.82rem}
-      .rsvp-card{padding:18px 10px}
-      .rsvp-card h3{font-size:1.3rem}
-      .rv-btn{padding:8px 12px;font-size:.46rem;letter-spacing:1px}
-      .w-card{padding:14px 10px}
-      .wish-form-card{padding:18px 10px}
-      .wish-form-card input,.wish-form-card textarea{padding:10px 12px;font-size:16px}
-      .wish-form-card button{padding:10px 22px;font-size:.48rem}
-      .ft-names{font-size:1.4rem}
-      .ft-date{font-size:.4rem;letter-spacing:1px}
-      .map-wrap iframe{height:160px}
+      .hero-content{padding:18px 10px}
+      section{padding-left:10px;padding-right:10px}
+      .hero-name{font-size:2.2rem}
+      .h-amp,.h-amp2{font-size:2.35rem}
+      .h-bis{font-size:1rem}
+      .h-label{font-size:.48rem;letter-spacing:1.6px;line-height:1.7}
+      .h-date-item{padding:8px 12px}
+      .h-date-item .big{font-size:1.2rem}
+      .h-date-item .small{font-size:.45rem}
+      .h-cta{padding:10px 18px;font-size:.54rem;letter-spacing:1.6px;min-height:44px}
+      .sec-title{font-size:1.65rem}
+      .sec-label{font-size:.46rem;letter-spacing:2.2px}
+      .sec-desc{font-size:.86rem}
+      .cd-num{font-size:1.7rem}
+      .cd-label{font-size:.42rem;letter-spacing:1.2px}
+      .cd-item{padding:12px 8px;border-radius:12px}
+      .couple-card{padding:20px 12px}
+      .c-photo{width:108px;height:108px}
+      .c-logo{width:66px;height:66px}
+      .c-name{font-size:1.22rem}
+      .c-role{font-size:.44rem;letter-spacing:2.2px}
+      .c-desc{font-size:.84rem;line-height:1.75}
+      .couple-divider .heart-g{width:40px;height:40px;font-size:1.05rem}
+      .story-dot{width:34px;height:34px;font-size:.84rem}
+      .story-card{padding:16px 12px}
+      .story-card h3{font-size:1.18rem}
+      .story-card .s-date{font-size:.44rem;letter-spacing:2.2px}
+      .story-card p{font-size:.82rem}
+      .cer-card{padding:20px 12px}
+      .cer-card h3{font-size:1.4rem}
+      .cer-block{padding:14px 12px}
+      .cer-block .val{font-size:.96rem}
+      .cer-block .lbl{font-size:.44rem}
+      .cer-btn{padding:10px 18px;font-size:.54rem;letter-spacing:1.6px;min-height:44px}
+      .bless-card{padding:20px 12px}
+      .bless-quran{font-size:1.06rem;line-height:2.05}
+      .bless-trans{font-size:.86rem}
+      .bless-dua{padding:16px 12px}
+      .bless-dua h4{font-size:.46rem;letter-spacing:3.2px}
+      .bless-dua p{font-size:.86rem}
+      .rsvp-card{padding:20px 12px}
+      .rsvp-card h3{font-size:1.4rem}
+      .rv-btn{padding:10px 14px;font-size:.5rem;letter-spacing:1.2px;min-height:42px}
+      .w-card{padding:16px 12px}
+      .wish-form-card{padding:20px 12px}
+      .wish-form-card input,.wish-form-card textarea{padding:12px 14px;font-size:16px}
+      .wish-form-card button{padding:12px 24px;font-size:.54rem;min-height:44px}
+      .ft-names{font-size:1.55rem}
+      .ft-date{font-size:.44rem;letter-spacing:1.2px}
+      .map-wrap iframe{height:180px}
     }
 
     /* ===== SMALL PHONES (321-380px: iPhone SE, Galaxy S series) ===== */
     @media(min-width:321px) and (max-width:380px){
-      .hero-content{padding:16px 10px}
-      section{padding-left:10px;padding-right:10px}
-      .hero-name{font-size:2.4rem}
-      .h-amp{font-size:2.6rem}
-      .h-label{font-size:.46rem;letter-spacing:2px}
-      .h-cta{padding:10px 20px;font-size:.52rem}
-      .sec-title{font-size:1.7rem}
-      .cd-num{font-size:1.8rem}
-      .couple-card{padding:22px 14px}
-      .c-photo{width:115px;height:115px}
-      .c-logo{width:72px;height:72px}
-      .c-name{font-size:1.25rem}
-      .story-dot{width:34px;height:34px;font-size:.85rem}
-      .story-card{padding:16px 12px}
-      .story-card h3{font-size:1.2rem}
-      .cer-card{padding:22px 14px}
-      .bless-card{padding:22px 14px}
-      .rsvp-card{padding:22px 14px}
-      .wish-form-card{padding:22px 14px}
-      .w-card{padding:18px 12px}
-      .ft-names{font-size:1.6rem}
+      .hero-content{padding:18px 12px}
+      section{padding-left:12px;padding-right:12px}
+      .hero-name{font-size:2.6rem}
+      .h-amp,.h-amp2{font-size:2.8rem}
+      .h-label{font-size:.5rem;letter-spacing:2.2px}
+      .h-date-item{padding:10px 14px}
+      .h-date-item .big{font-size:1.3rem}
+      .h-cta{padding:12px 22px;font-size:.58rem;min-height:46px}
+      .sec-title{font-size:1.9rem}
+      .sec-label{font-size:.5rem}
+      .cd-num{font-size:1.95rem}
+      .cd-item{padding:14px 10px}
+      .couple-card{padding:24px 16px}
+      .c-photo{width:122px;height:122px}
+      .c-logo{width:76px;height:76px}
+      .c-name{font-size:1.34rem}
+      .c-desc{font-size:.88rem}
+      .story-dot{width:36px;height:36px;font-size:.9rem}
+      .story-card{padding:18px 14px}
+      .story-card h3{font-size:1.28rem}
+      .story-card p{font-size:.86rem}
+      .cer-card{padding:24px 16px}
+      .bless-card{padding:24px 16px}
+      .rsvp-card{padding:24px 16px}
+      .wish-form-card{padding:24px 16px}
+      .w-card{padding:20px 14px}
+      .rv-btn{min-height:44px}
+      .ft-names{font-size:1.72rem}
     }
 
     /* ===== MEDIUM PHONES (381-480px: iPhone 12/13/14/15, Pixel) ===== */
     @media(min-width:381px) and (max-width:480px){
-      .hero-name{font-size:clamp(2.6rem,8vw,3.2rem)}
-      .h-amp{font-size:clamp(2.8rem,7vw,3.5rem)}
-      .sec-title{font-size:clamp(1.8rem,5vw,2.2rem)}
-      .cd-num{font-size:clamp(2rem,5vw,2.6rem)}
-      .couple-card{padding:28px 18px}
-      .c-photo{width:130px;height:130px}
-      .c-logo{width:82px;height:82px}
-      .story-dot{width:38px;height:38px}
-      .cer-card{padding:28px 18px}
+      .hero-content{padding:20px 14px}
+      .hero-name{font-size:clamp(2.85rem,8.5vw,3.45rem)}
+      .h-amp,.h-amp2{font-size:clamp(3rem,7.5vw,3.8rem)}
+      .h-label{font-size:.54rem;letter-spacing:2.4px}
+      .h-date-item{padding:10px 16px}
+      .h-cta{padding:12px 24px;font-size:.6rem;min-height:48px}
+      .sec-title{font-size:clamp(2rem,5.2vw,2.35rem)}
+      .sec-label{font-size:.54rem}
+      .cd-num{font-size:clamp(2.15rem,5.4vw,2.8rem)}
+      .cd-item{padding:16px 12px}
+      .couple-card{padding:30px 20px}
+      .c-photo{width:138px;height:138px}
+      .c-logo{width:88px;height:88px}
+      .c-name{font-size:1.45rem}
+      .c-desc{font-size:.92rem}
+      .story-dot{width:40px;height:40px}
+      .story-card{padding:22px 18px}
+      .story-card h3{font-size:1.34rem}
+      .story-card p{font-size:.9rem}
+      .cer-card{padding:30px 20px}
+      .bless-card{padding:30px 20px}
+      .rsvp-card{padding:30px 20px}
+      .wish-form-card{padding:28px 20px}
+      .rv-btn{min-height:46px}
     }
 
     /* ===== LARGE PHONES / SMALL TABLETS (481-768px: iPhone Pro Max, iPad Mini) ===== */
