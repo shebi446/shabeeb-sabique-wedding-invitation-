@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#06051a" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <title>Mohammed Shabeeb & Shabna Sherin | Wedding</title>
+  <title>Mohammed Shabeeb & Shabna Sherin · Mohammed Sabique & Irshana | Wedding</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;1,500&family=Pinyon+Script&family=Cinzel:wght@500;600&family=Outfit:wght@300;400&family=Amiri:wght@400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
@@ -141,9 +141,9 @@
     .h-groom{animation-delay:.7s}
     .h-amp{animation-delay:.9s}
     .h-bride{animation-delay:1.1s}
-    .h-label{animation-delay:1.4s}
-    .h-date{animation-delay:1.7s}
-    .h-cta{animation-delay:2s}
+    .h-label{animation-delay:3s}
+    .h-date{animation-delay:3.3s}
+    .h-cta{animation-delay:3.6s}
     @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
     .h-bis{font-family:'Amiri',serif;font-size:clamp(1rem,2.8vw,2rem);color:#fff8e7;opacity:0;direction:rtl;background:linear-gradient(135deg,#fff 0%,#ffd700 50%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.6;word-spacing:2px}
     .h-orn{margin:clamp(6px,1.5vw,12px) 0}
@@ -155,6 +155,11 @@
     @keyframes ampShine{to{background-position:200% center}}
     @keyframes titleShimmer{to{background-position:200% center}}
     .h-label{font-family:'Cinzel',serif;font-size:clamp(.44rem,1.3vw,.62rem);letter-spacing:clamp(2px,0.8vw,8px);text-transform:uppercase;color:#f4d775;margin-top:clamp(12px,3vw,20px);font-weight:400;text-shadow:0 0 12px rgba(255,215,0,.4);line-height:1.8;padding:0 clamp(4px,2vw,8px);word-spacing:1px}
+    .h-couple-divider{margin:clamp(8px,2vw,16px) 0;opacity:0;transform:translateY(30px);animation:fadeUp .8s ease 1.8s forwards}
+    .h-groom2{animation-delay:0s,2.1s !important}
+    .h-amp2{animation-delay:0s,2.4s !important}
+    .h-bride2{animation-delay:0s,2.7s !important}
+    .h-amp2{font-family:'Pinyon Script',cursive;font-size:clamp(2.4rem,7vw,7rem);font-weight:400;color:transparent;margin:-2px 0;opacity:0;background:linear-gradient(135deg,#ffd700 0%,#ffb6c1 30%,#ffd700 50%,#ffb6c1 70%,#ffd700 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:ampShine 3s linear infinite,fadeUp .8s ease 2.4s forwards;line-height:.85}
     .h-date{margin-top:clamp(10px,2.5vw,16px);display:flex;align-items:center;justify-content:center;gap:clamp(6px,1.5vw,16px);flex-wrap:wrap}
     .h-date-item{background:var(--glass);border:1px solid var(--border);border-radius:clamp(10px,2vw,14px);padding:clamp(8px,1.5vw,14px) clamp(12px,2.5vw,26px);text-align:center;transition:transform .3s ease,border-color .3s;-webkit-tap-highlight-color:transparent;min-width:0}
     .h-date-item:active{transform:scale(.97);border-color:var(--gold-dim)}
@@ -162,7 +167,7 @@
     .h-date-item .small{font-family:'Cinzel',serif;font-size:clamp(.4rem,1vw,.55rem);letter-spacing:clamp(2px,0.6vw,4px);text-transform:uppercase;color:#f4d775;margin-top:2px}
     .h-cta{margin-top:clamp(16px,3.5vw,28px);display:inline-flex;align-items:center;gap:6px;padding:clamp(10px,2vw,14px) clamp(20px,4vw,32px);border:1px solid var(--gold-dim);border-radius:100px;color:var(--gold);font-family:'Cinzel',serif;font-size:clamp(.52rem,1.3vw,.7rem);letter-spacing:clamp(2px,0.6vw,4px);text-transform:uppercase;text-decoration:none;transition:all .3s ease;cursor:pointer;background:transparent;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
     .h-cta:active{background:rgba(212,175,55,.1);border-color:var(--gold);transform:scale(.97)}
-    .h-scroll{position:absolute;bottom:clamp(16px,4vw,40px);left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:5px;opacity:0;animation:fadeUp .8s ease 2.5s forwards}
+    .h-scroll{position:absolute;bottom:clamp(16px,4vw,40px);left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:5px;opacity:0;animation:fadeUp .8s ease 4s forwards}
     .h-scroll span{font-size:.42rem;letter-spacing:3px;text-transform:uppercase;color:var(--text3)}
     .h-scroll-line{width:1px;height:clamp(20px,4vw,30px);background:linear-gradient(to bottom,var(--gold),transparent);animation:scrollLine 2s ease-in-out infinite}
     @keyframes scrollLine{0%,100%{opacity:.2;transform:scaleY(.5) translateY(-8px)}50%{opacity:.8;transform:scaleY(1) translateY(0)}}
@@ -319,6 +324,89 @@
     .reveal-right.vis{opacity:1;transform:translateX(0)}
     .reveal-scale{opacity:0;transform:scale(.95);transition:opacity .5s ease,transform .5s ease}
     .reveal-scale.vis{opacity:1;transform:scale(1)}
+
+    /* ===== 3D & EFFECTS ===== */
+    #particlesCanvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+    .sparkle{position:fixed;pointer-events:none;z-index:9997;border-radius:50%;animation:spkl .7s ease-out forwards}
+    @keyframes spkl{0%{transform:scale(1) rotate(0deg);opacity:1}100%{transform:scale(0) rotate(180deg);opacity:0}}
+
+    /* Touch sparkle burst */
+    .touch-burst{position:fixed;pointer-events:none;z-index:9997;width:6px;height:6px;border-radius:50%}
+    .touch-burst::before,.touch-burst::after{content:'';position:absolute;border-radius:50%;animation:burstOut .6s ease-out forwards}
+    .touch-burst::before{inset:-8px;border:1px solid var(--gold);opacity:.6}
+    .touch-burst::after{inset:-18px;border:1px solid var(--blush);opacity:.3;animation-delay:.1s}
+    @keyframes burstOut{0%{transform:scale(0);opacity:.8}100%{transform:scale(3);opacity:0}}
+
+    /* 3D Card perspective */
+    .tilt-card{transition:transform .4s cubic-bezier(.25,.46,.45,.94),box-shadow .4s ease;transform-style:preserve-3d}
+    .tilt-card .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,215,0,.12),transparent 60%);z-index:1}
+
+    /* Mobile tap glow effect */
+    .tilt-card.tap-glow{animation:tapGlow .6s ease}
+    @keyframes tapGlow{0%{box-shadow:0 0 0 rgba(212,175,55,0)}30%{box-shadow:0 0 35px rgba(212,175,55,.2),0 0 60px rgba(124,58,237,.08)}100%{box-shadow:none}}
+    .tilt-card.tap-glow .tilt-shine{opacity:1}
+
+    /* 3D reveal animations */
+    .reveal-3d{opacity:0;transform:perspective(800px) rotateX(8deg) translateY(40px);transition:opacity .7s ease,transform .7s cubic-bezier(.25,.46,.45,.94)}
+    .reveal-3d.vis{opacity:1;transform:perspective(800px) rotateX(0) translateY(0)}
+    .reveal-flip{opacity:0;transform:perspective(600px) rotateY(-12deg) translateX(-25px);transition:opacity .7s ease,transform .7s cubic-bezier(.25,.46,.45,.94)}
+    .reveal-flip.vis{opacity:1;transform:perspective(600px) rotateY(0) translateX(0)}
+    .reveal-flip-r{opacity:0;transform:perspective(600px) rotateY(12deg) translateX(25px);transition:opacity .7s ease,transform .7s cubic-bezier(.25,.46,.45,.94)}
+    .reveal-flip-r.vis{opacity:1;transform:perspective(600px) rotateY(0) translateX(0)}
+    .reveal-zoom{opacity:0;transform:perspective(600px) scale(.88) translateZ(-30px);transition:opacity .6s ease,transform .6s cubic-bezier(.25,.46,.45,.94)}
+    .reveal-zoom.vis{opacity:1;transform:perspective(600px) scale(1) translateZ(0)}
+
+    /* Mobile: softer 3D to prevent clipping */
+    @media(max-width:768px){
+      .reveal-3d{transform:perspective(600px) rotateX(5deg) translateY(30px)}
+      .reveal-flip{transform:perspective(500px) rotateY(-8deg) translateX(-15px)}
+      .reveal-flip-r{transform:perspective(500px) rotateY(8deg) translateX(15px)}
+      .reveal-zoom{transform:perspective(500px) scale(.9) translateZ(-20px)}
+    }
+
+    /* Floating hearts */
+    .float-hearts{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+    .float-hearts span{position:absolute;bottom:-40px;color:var(--gold);opacity:.06;animation:floatUp linear infinite;font-size:1.2rem}
+    @keyframes floatUp{0%{transform:translateY(0) rotate(0deg) scale(1);opacity:0}10%{opacity:.08}90%{opacity:.06}100%{transform:translateY(-110vh) rotate(720deg) scale(.3);opacity:0}}
+
+    /* Glow pulse on sections */
+    .sec-header .sec-title{animation:titleShimmer 6s linear infinite,glowPulse 4s ease-in-out infinite}
+    @keyframes glowPulse{0%,100%{filter:drop-shadow(0 2px 10px rgba(212,175,55,.2))}50%{filter:drop-shadow(0 4px 25px rgba(212,175,55,.45)) drop-shadow(0 0 40px rgba(124,58,237,.15))}}
+
+    /* 3D countdown flip effect */
+    .cd-num{transition:transform .3s cubic-bezier(.25,.46,.45,.94)}
+    .cd-num.flip{animation:cdFlip .5s ease}
+    @keyframes cdFlip{0%{transform:perspective(200px) rotateX(0)}50%{transform:perspective(200px) rotateX(-90deg);opacity:.5}100%{transform:perspective(200px) rotateX(0)}}
+
+    /* Card glass reflection sweep on tap/hover */
+    .card-sweep-wrap{position:absolute;inset:0;overflow:hidden;border-radius:inherit;pointer-events:none;z-index:2}
+    .card-sweep-wrap::after{content:'';position:absolute;top:-50%;left:-200%;width:200%;height:200%;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.04) 45%,rgba(255,215,0,.06) 50%,rgba(255,255,255,.04) 55%,transparent 60%);transform:rotate(25deg)}
+    .sweep-active .card-sweep-wrap::after{animation:cardSweep .8s ease forwards}
+    @keyframes cardSweep{0%{left:-200%}100%{left:200%}}
+
+    /* Story dot 3D bounce */
+    .story-dot{transition:all .5s cubic-bezier(.34,1.56,.64,1)}
+
+    /* Mobile touch ripple */
+    .touch-ripple{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.15),transparent 70%);pointer-events:none;animation:rippleOut .6s ease-out forwards;z-index:5}
+    @keyframes rippleOut{0%{transform:scale(0);opacity:1}100%{transform:scale(4);opacity:0}}
+
+    /* Mobile scroll-driven parallax */
+    .mob-parallax{transition:transform .05s linear}
+
+    /* Gyro tilt indicator */
+    .gyro-active .tilt-card{transition:transform .08s linear}
+
+    /* Pulsing border on mobile active */
+    @media(pointer:coarse){
+      .tilt-card:active{transform:perspective(600px) scale(.98) rotateX(2deg);transition:transform .15s ease}
+      .cd-item:active{transform:perspective(400px) scale(.96) rotateX(3deg)}
+      .story-card:active{transform:perspective(400px) scale(.985) rotateX(1.5deg)}
+      .rv-btn:active{transform:perspective(300px) scale(.95) rotateY(3deg)}
+      .h-cta:active{transform:perspective(300px) scale(.96) rotateY(-2deg)}
+      .h-date-item:active{transform:perspective(300px) scale(.95) rotateX(4deg)}
+      .cer-btn:active{transform:perspective(300px) scale(.96) rotateY(-2deg)}
+    }
 
     /* ===== DIVIDER ===== */
     .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0}
@@ -535,7 +623,7 @@
       <div class="ld-core"><span class="heart">♥</span></div>
     </div>
     <div class="ld-text">
-      <div class="ld-names">S & S</div>
+      <div class="ld-names">S&S · S&I</div>
       <div class="ld-line"></div>
       <div class="ld-sub"><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div>
     </div>
@@ -556,6 +644,12 @@
     <a href="#wishes">Wishes</a>
   </nav>
   <button class="mob-toggle" id="mobToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+
+  <!-- PARTICLES CANVAS -->
+  <canvas id="particlesCanvas"></canvas>
+
+  <!-- FLOATING HEARTS -->
+  <div class="float-hearts" id="floatHearts"></div>
 
   <!-- HERO -->
   <section id="hero">
@@ -580,7 +674,21 @@
       <div class="hero-name h-groom">Mohammed Shabeeb</div>
       <div class="h-amp">&</div>
       <div class="hero-name h-bride">Shabna Sherin</div>
-      <div class="h-label">Request the honour of your presence at their wedding celebration</div>
+
+      <div class="h-couple-divider">
+        <svg viewBox="0 0 200 20" fill="none" style="width:min(40vw,200px);height:20px;opacity:.25">
+          <line x1="0" y1="10" x2="80" y2="10" stroke="url(#og1)" stroke-width=".5"/>
+          <circle cx="100" cy="10" r="3" fill="none" stroke="#d4af37" stroke-width=".5" opacity=".5"/>
+          <circle cx="100" cy="10" r="1" fill="#d4af37" opacity=".3"/>
+          <line x1="120" y1="10" x2="200" y2="10" stroke="url(#og2)" stroke-width=".5"/>
+        </svg>
+      </div>
+
+      <div class="hero-name h-groom2">Mohammed Sabique</div>
+      <div class="h-amp2">&</div>
+      <div class="hero-name h-bride2">Irshana</div>
+
+      <div class="h-label">Request the honour of your presence at their wedding celebrations</div>
       <div class="h-date">
         <div class="h-date-item"><div class="big">08</div><div class="small">July</div></div>
         <div class="h-date-item"><div class="big">2026</div><div class="small">Year</div></div>
@@ -601,13 +709,13 @@
         <h2 class="sec-title">Counting Every<br>Moment Until Forever</h2>
       </div>
       <div class="cd-grid">
-        <div class="cd-item reveal"><span class="cd-num" id="cDays">00</span><span class="cd-label">Days</span></div>
+        <div class="cd-item reveal-3d"><span class="cd-num" id="cDays">00</span><span class="cd-label">Days</span></div>
         <span class="cd-sep">:</span>
-        <div class="cd-item reveal"><span class="cd-num" id="cHrs">00</span><span class="cd-label">Hours</span></div>
+        <div class="cd-item reveal-3d"><span class="cd-num" id="cHrs">00</span><span class="cd-label">Hours</span></div>
         <span class="cd-sep">:</span>
-        <div class="cd-item reveal"><span class="cd-num" id="cMin">00</span><span class="cd-label">Minutes</span></div>
+        <div class="cd-item reveal-3d"><span class="cd-num" id="cMin">00</span><span class="cd-label">Minutes</span></div>
         <span class="cd-sep">:</span>
-        <div class="cd-item reveal"><span class="cd-num" id="cSec">00</span><span class="cd-label">Seconds</span></div>
+        <div class="cd-item reveal-3d"><span class="cd-num" id="cSec">00</span><span class="cd-label">Seconds</span></div>
       </div>
     </div>
   </section>
@@ -618,11 +726,12 @@
   <section id="couple">
     <div class="sec-container">
       <div class="sec-header reveal">
-        <div class="sec-label">The Couple</div>
-        <h2 class="sec-title">Two Hearts,<br>One Beautiful Journey</h2>
+        <div class="sec-label">The Couples</div>
+        <h2 class="sec-title">Four Hearts,<br>Two Beautiful Journeys</h2>
       </div>
       <div class="couple-row">
-        <div class="couple-card reveal-left">
+        <div class="couple-card reveal-flip tilt-card">
+          <div class="tilt-shine"></div>
           <div class="c-photo">
             <div class="c-logo-ring"></div>
             <svg class="c-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Groom">
@@ -658,7 +767,8 @@
         <div class="couple-divider reveal">
           <div class="heart-g">♥</div>
         </div>
-        <div class="couple-card reveal-right">
+        <div class="couple-card reveal-flip-r tilt-card">
+          <div class="tilt-shine"></div>
           <div class="c-photo">
             <div class="c-logo-ring"></div>
             <svg class="c-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Bride">
@@ -701,6 +811,97 @@
           <p class="c-desc">Elegant, graceful and compassionate — she carries a quiet strength and a radiant warmth. Her love for family and gentle soul make her the perfect partner for this sacred journey.</p>
         </div>
       </div>
+
+      <!-- SECOND COUPLE DIVIDER -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,24px);margin:clamp(36px,6vw,72px) 0 clamp(28px,5vw,56px)" class="reveal">
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim))"></div>
+        <div style="font-family:'Pinyon Script',cursive;font-size:clamp(1.2rem,2.5vw,1.8rem);color:var(--gold);opacity:.6;white-space:nowrap">also celebrating</div>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,var(--gold-dim),transparent)"></div>
+      </div>
+
+      <!-- SECOND COUPLE -->
+      <div class="couple-row">
+        <div class="couple-card reveal-flip tilt-card">
+          <div class="tilt-shine"></div>
+          <div class="c-photo">
+            <div class="c-logo-ring"></div>
+            <svg class="c-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Groom">
+              <defs>
+                <linearGradient id="cgrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8b6914"/>
+                  <stop offset="35%" stop-color="#d4af37"/>
+                  <stop offset="65%" stop-color="#ffd700"/>
+                  <stop offset="100%" stop-color="#a78bfa"/>
+                </linearGradient>
+              </defs>
+              <path class="stroke" d="M22 50 Q22 22 50 22 Q78 22 78 50" opacity=".3" stroke-width="0.8"/>
+              <path class="fill" d="M34 32 Q34 22 50 21 Q66 22 66 32 L66 36 L34 36 Z"/>
+              <line class="stroke" x1="32" y1="36" x2="68" y2="36" stroke-width="1.8"/>
+              <circle class="accent" cx="50" cy="24" r="1.4"/>
+              <path class="stroke" d="M36 36 Q34 40 34 46 Q34 56 38 60 Q42 66 50 66 Q58 66 62 60 Q66 56 66 46 Q66 40 64 36"/>
+              <path class="stroke" d="M38 54 Q38 64 50 67 Q62 64 62 54" opacity=".6"/>
+              <path class="stroke" d="M44 55 Q50 57 56 55" opacity=".7"/>
+              <circle class="fill" cx="43" cy="48" r="1.2"/>
+              <circle class="fill" cx="57" cy="48" r="1.2"/>
+              <path class="stroke" d="M45 67 L45 72 M55 67 L55 72" opacity=".6"/>
+              <path class="stroke" d="M18 92 Q18 78 32 72 L44 70 L50 80 L56 70 L68 72 Q82 78 82 92"/>
+              <path class="fill" d="M48 78 L50 84 L52 78 L50 76 Z" opacity=".8"/>
+              <circle class="accent" cx="50" cy="88" r="1"/>
+              <path class="accent" d="M16 50 L17 52 L19 53 L17 54 L16 56 L15 54 L13 53 L15 52 Z" opacity=".5"/>
+              <path class="accent" d="M84 50 L85 52 L87 53 L85 54 L84 56 L83 54 L81 53 L83 52 Z" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="c-name">Mohammed Sabique</h3>
+          <div class="c-role">The Groom</div>
+          <p class="c-desc">A soul full of grace and devotion. His gentle spirit, deep faith, and unwavering commitment to those he loves make him a truly remarkable partner for this beautiful journey.</p>
+        </div>
+        <div class="couple-divider reveal">
+          <div class="heart-g">♥</div>
+        </div>
+        <div class="couple-card reveal-flip-r tilt-card">
+          <div class="tilt-shine"></div>
+          <div class="c-photo">
+            <div class="c-logo-ring"></div>
+            <svg class="c-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Bride">
+              <defs>
+                <linearGradient id="cgrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8b6914"/>
+                  <stop offset="35%" stop-color="#d4af37"/>
+                  <stop offset="65%" stop-color="#ffd700"/>
+                  <stop offset="100%" stop-color="#a78bfa"/>
+                </linearGradient>
+              </defs>
+              <path class="stroke" d="M22 50 Q22 22 50 22 Q78 22 78 50" opacity=".3" stroke-width="0.8"/>
+              <path class="fill" d="M28 52 Q26 34 38 26 Q44 22 50 22 Q56 22 62 26 Q74 34 72 52 Q72 64 70 72 L66 76 L34 76 L30 72 Q28 64 28 52 Z" opacity=".2"/>
+              <path class="stroke" d="M28 52 Q26 34 38 26 Q44 22 50 22 Q56 22 62 26 Q74 34 72 52 Q72 64 70 72"/>
+              <path class="stroke" d="M36 48 Q36 36 50 34 Q64 36 64 48 Q64 60 60 66 Q56 70 50 70 Q44 70 40 66 Q36 60 36 48 Z" stroke-width="1.4"/>
+              <path class="stroke" d="M30 70 Q40 68 50 70 Q60 68 70 70" opacity=".75"/>
+              <path class="stroke" d="M22 92 Q22 80 32 76 L42 74 Q46 78 50 78 Q54 78 58 74 L68 76 Q78 80 78 92"/>
+              <path class="stroke" d="M40 76 Q50 80 60 76" opacity=".5"/>
+              <path class="stroke" d="M42 50 Q44.5 48 47 50 Q44.5 52 42 50 Z" stroke-width="1.2"/>
+              <path class="stroke" d="M53 50 Q55.5 48 58 50 Q55.5 52 53 50 Z" stroke-width="1.2"/>
+              <circle class="fill" cx="44.5" cy="50" r=".9"/>
+              <circle class="fill" cx="55.5" cy="50" r=".9"/>
+              <path class="stroke" d="M41 45 Q44.5 43 47 45" opacity=".75" stroke-width="1.1"/>
+              <path class="stroke" d="M53 45 Q55.5 43 59 45" opacity=".75" stroke-width="1.1"/>
+              <path class="fill" d="M47 60 Q50 58.5 53 60 Q51.5 61.5 50 61.5 Q48.5 61.5 47 60 Z" opacity=".65"/>
+              <path class="stroke" d="M47 60 Q50 58.5 53 60" opacity=".4" stroke-width=".7"/>
+              <circle class="accent" cx="50" cy="38" r="1.2"/>
+              <path class="stroke" d="M34 40 Q34 50 36 56" opacity=".4" stroke-width=".7"/>
+              <path class="stroke" d="M66 40 Q66 50 64 56" opacity=".4" stroke-width=".7"/>
+              <path class="stroke" d="M30 56 Q32 64 34 70" opacity=".35" stroke-width=".6"/>
+              <path class="stroke" d="M70 56 Q68 64 66 70" opacity=".35" stroke-width=".6"/>
+              <circle class="accent" cx="40" cy="56" r=".7" opacity=".45"/>
+              <circle class="accent" cx="60" cy="56" r=".7" opacity=".45"/>
+              <path class="accent" d="M16 50 L17 52 L19 53 L17 54 L16 56 L15 54 L13 53 L15 52 Z" opacity=".5"/>
+              <path class="accent" d="M84 50 L85 52 L87 53 L85 54 L84 56 L83 54 L81 53 L83 52 Z" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="c-name">Irshana</h3>
+          <div class="c-role">The Bride</div>
+          <p class="c-desc">Radiant with grace and kindness — her warmth lights up every heart she touches. With a soul anchored in faith and love, she brings beauty and serenity to this sacred bond.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -714,7 +915,7 @@
         <h2 class="sec-title">A Journey Written<br>By Divine Will</h2>
       </div>
       <div class="story-line">
-        <div class="story-item reveal">
+        <div class="story-item reveal-3d">
           <div class="story-dot">💑</div>
           <div class="story-card">
             <h3>The First Meeting</h3>
@@ -722,7 +923,7 @@
             <p>Two souls brought together by divine will. What began as a simple introduction blossomed into conversations that felt like home. Every word shared was a thread weaving a beautiful story.</p>
           </div>
         </div>
-        <div class="story-item reveal">
+        <div class="story-item reveal-3d">
           <div class="story-dot">💍</div>
           <div class="story-card">
             <h3>The Proposal</h3>
@@ -730,7 +931,7 @@
             <p>Under the warm glow of faith and family, a question was asked that would change everything. With a heart full of love, Shabeeb asked Shabna to walk this life together — and she said yes.</p>
           </div>
         </div>
-        <div class="story-item reveal">
+        <div class="story-item reveal-3d">
           <div class="story-dot">💎</div>
           <div class="story-card">
             <h3>The Engagement</h3>
@@ -738,12 +939,12 @@
             <p>Surrounded by loved ones, they exchanged rings and promises. The air was filled with joy, duas, and the sweet scent of celebration. A milestone that brought the dream closer to reality.</p>
           </div>
         </div>
-        <div class="story-item reveal">
+        <div class="story-item reveal-3d">
           <div class="story-dot">💒</div>
           <div class="story-card">
             <h3>The Big Day</h3>
             <div class="s-date">July 8, 2026</div>
-            <p>Two hearts become one in the presence of family, friends, and Allah. A celebration of love, faith, and togetherness — the beginning of a lifetime of happiness and shared dreams.</p>
+            <p>Four hearts become two in the presence of family, friends, and Allah. A grand double celebration of love, faith, and togetherness — the beginning of lifetimes of happiness and shared dreams.</p>
           </div>
         </div>
       </div>
@@ -762,7 +963,7 @@
         <div class="sec-label">The Celebration</div>
         <h2 class="sec-title">Wedding Ceremony</h2>
       </div>
-      <div class="cer-card reveal-scale">
+      <div class="cer-card reveal-zoom tilt-card"><div class="tilt-shine"></div>
         <h3>The Nikah & Reception</h3>
         <div class="cer-info">
           <div class="cer-block">
@@ -798,12 +999,12 @@
         <div class="sec-label">From the Holy Quran</div>
         <h2 class="sec-title">Barakah & Blessings</h2>
       </div>
-      <div class="bless-card reveal-scale">
+      <div class="bless-card reveal-zoom tilt-card"><div class="tilt-shine"></div>
         <div class="bless-quran">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</div>
         <p class="bless-trans">"And among His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy." — Surah Ar-Rum: 21</p>
         <div class="bless-dua">
           <h4>Our Dua</h4>
-          <p>May Allah bless this union with love, peace, and endless barakah. May He make their marriage a source of joy, strength, and faith.<br><br><em style="color:var(--gold);opacity:.5">Rabbana hablana min azwajina wa dhurriyatina qurrata a'yun.</em></p>
+          <p>May Allah bless these unions with love, peace, and endless barakah. May He make their marriages a source of joy, strength, and faith.<br><br><em style="color:var(--gold);opacity:.5">Rabbana hablana min azwajina wa dhurriyatina qurrata a'yun.</em></p>
         </div>
       </div>
     </div>
@@ -818,9 +1019,9 @@
         <div class="sec-label">Your Response</div>
         <h2 class="sec-title">RSVP</h2>
       </div>
-      <div class="rsvp-card reveal-scale">
+      <div class="rsvp-card reveal-3d tilt-card"><div class="tilt-shine"></div>
         <h3>Will You Be Joining Us?</h3>
-        <p>Your presence would mean the world to us. Please let us know if you can make it to our special day.</p>
+        <p>Your presence would mean the world to us. Please let us know if you can make it to our special day of double celebration.</p>
         <div class="rsvp-btns">
           <button class="rv-btn" onclick="doRSVP('yes',this)">Joyfully Accept ✨</button>
           <button class="rv-btn" onclick="doRSVP('no',this)">Regretfully Decline 🤲</button>
@@ -838,7 +1039,7 @@
       <div class="sec-header reveal">
         <div class="sec-label">Send Love</div>
         <h2 class="sec-title">Guest Wishes</h2>
-        <p class="sec-desc">Leave your heartfelt blessings for the couple</p>
+        <p class="sec-desc">Leave your heartfelt blessings for the couples</p>
       </div>
       <div class="wish-grid" id="wishGrid">
         <div class="w-card reveal">
@@ -868,6 +1069,7 @@
   <div id="footer">
     <div class="ft-heart">♥</div>
     <div class="ft-names">Mohammed Shabeeb & Shabna Sherin</div>
+    <div class="ft-names" style="font-size:clamp(1.3rem,4.5vw,2.8rem);margin-top:4px">Mohammed Sabique & Irshana</div>
     <div class="ft-date">July 8, 2026 · Esquire Ville Auditorium</div>
     <p class="ft-copy">Made with love</p>
   </div>
@@ -1093,6 +1295,327 @@
     }
     setVH();
     window.addEventListener('resize', setVH, { passive: true });
+
+    // ===== GOLDEN PARTICLES CANVAS =====
+    (function(){
+      var c = document.getElementById('particlesCanvas');
+      if(!c) return;
+      var ctx = c.getContext('2d');
+      var particles = [];
+      var maxP = isTouch ? 25 : 70;
+      var dpr = Math.min(window.devicePixelRatio||1, 2);
+
+      function resize(){
+        c.width = window.innerWidth * dpr;
+        c.height = window.innerHeight * dpr;
+        c.style.width = window.innerWidth+'px';
+        c.style.height = window.innerHeight+'px';
+        ctx.scale(dpr, dpr);
+      }
+      resize();
+      window.addEventListener('resize',resize,{passive:true});
+
+      function Particle(){
+        this.x = Math.random()*window.innerWidth;
+        this.y = Math.random()*window.innerHeight;
+        this.vx = (Math.random()-.5)*(isTouch?.15:.3);
+        this.vy = (Math.random()-.5)-(isTouch?.1:.2);
+        this.r = Math.random()*(isTouch?1.5:2)+.5;
+        this.o = Math.random()*(isTouch?.2:.3)+.05;
+        this.life = Math.random()*200+100;
+        this.age = 0;
+        this.color = Math.random()>.5 ? '212,175,55' : '167,139,250';
+        this.pulse = Math.random()*Math.PI*2;
+      }
+
+      for(var i=0;i<maxP;i++) particles.push(new Particle());
+
+      var frame = 0;
+      function draw(){
+        frame++;
+        ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
+        for(var i=particles.length-1;i>=0;i--){
+          var p=particles[i];
+          p.x+=p.vx; p.y+=p.vy; p.age++; p.pulse+=.03;
+          var fade = p.age<20 ? p.age/20 : p.age>p.life-20 ? (p.life-p.age)/20 : 1;
+          var pulse = .7 + Math.sin(p.pulse)*.3;
+          if(p.age>=p.life||p.y<-10||p.x<-10||p.x>window.innerWidth+10){
+            particles[i]=new Particle();
+            particles[i].y = window.innerHeight+10;
+            continue;
+          }
+          // Glowing particle
+          ctx.beginPath();
+          ctx.arc(p.x,p.y,p.r*pulse,0,Math.PI*2);
+          ctx.fillStyle='rgba('+p.color+','+(p.o*fade*pulse)+')';
+          ctx.fill();
+          // Outer glow
+          ctx.beginPath();
+          ctx.arc(p.x,p.y,p.r*(isTouch?2.5:3.5),0,Math.PI*2);
+          ctx.fillStyle='rgba('+p.color+','+(p.o*fade*.12)+')';
+          ctx.fill();
+        }
+        // Connect nearby particles (desktop + limited mobile)
+        var connectDist = isTouch ? 80 : 120;
+        var connectMax = isTouch ? 15 : particles.length;
+        for(var a=0;a<Math.min(connectMax,particles.length);a++){
+          for(var b=a+1;b<Math.min(connectMax,particles.length);b++){
+            var dx=particles[a].x-particles[b].x;
+            var dy=particles[a].y-particles[b].y;
+            var dist=Math.sqrt(dx*dx+dy*dy);
+            if(dist<connectDist){
+              ctx.beginPath();
+              ctx.moveTo(particles[a].x,particles[a].y);
+              ctx.lineTo(particles[b].x,particles[b].y);
+              ctx.strokeStyle='rgba(212,175,55,'+((isTouch?.04:.08)*(1-dist/connectDist))+')';
+              ctx.lineWidth=.5;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+
+    // ===== FLOATING HEARTS =====
+    (function(){
+      var container = document.getElementById('floatHearts');
+      if(!container) return;
+      var hearts = ['♥','✦','❋','✧','♡','⋆'];
+      var maxHearts = isTouch ? 5 : 8;
+      var interval = isTouch ? 6000 : 4000;
+      function addHeart(){
+        if(container.children.length > (isTouch?6:12)) return;
+        var s = document.createElement('span');
+        s.textContent = hearts[Math.floor(Math.random()*hearts.length)];
+        s.style.left = Math.random()*100+'%';
+        s.style.fontSize = (Math.random()*(isTouch?8:12)+(isTouch?6:8))+'px';
+        s.style.animationDuration = (Math.random()*15+15)+'s';
+        s.style.animationDelay = Math.random()*3+'s';
+        container.appendChild(s);
+        setTimeout(function(){if(s.parentNode)s.remove()},33000);
+      }
+      for(var i=0;i<maxHearts;i++) setTimeout(addHeart,i*2500);
+      setInterval(addHeart,interval);
+    })();
+
+    // ===== SPARKLE / TOUCH EFFECTS =====
+    if(!isTouch){
+      // Desktop sparkle cursor
+      var lastSparkle = 0;
+      document.addEventListener('mousemove',function(e){
+        var now = Date.now();
+        if(now - lastSparkle < 60) return;
+        lastSparkle = now;
+        var s = document.createElement('div');
+        s.className = 'sparkle';
+        var size = Math.random()*4+2;
+        var colors = ['#ffd700','#d4af37','#f4d775','#a78bfa','#c4b5fd'];
+        s.style.cssText = 'left:'+(e.clientX-size/2)+'px;top:'+(e.clientY-size/2)+'px;width:'+size+'px;height:'+size+'px;background:'+colors[Math.floor(Math.random()*colors.length)]+';box-shadow:0 0 '+(size*2)+'px '+colors[Math.floor(Math.random()*colors.length)];
+        document.body.appendChild(s);
+        setTimeout(function(){s.remove()},700);
+      });
+    } else {
+      // Mobile touch burst sparkles
+      document.addEventListener('touchstart',function(e){
+        var t = e.touches[0];
+        if(!t) return;
+        // Create burst ring
+        var burst = document.createElement('div');
+        burst.className = 'touch-burst';
+        var colors = ['#ffd700','#d4af37','#a78bfa'];
+        burst.style.cssText = 'left:'+(t.clientX-3)+'px;top:'+(t.clientY-3)+'px;background:'+colors[Math.floor(Math.random()*3)];
+        document.body.appendChild(burst);
+        setTimeout(function(){burst.remove()},700);
+        // Scatter mini sparkles
+        for(var i=0;i<4;i++){
+          var sp = document.createElement('div');
+          sp.className = 'sparkle';
+          var sz = Math.random()*3+1.5;
+          var angle = Math.random()*Math.PI*2;
+          var dist = Math.random()*25+10;
+          var sx = t.clientX + Math.cos(angle)*dist;
+          var sy = t.clientY + Math.sin(angle)*dist;
+          sp.style.cssText='left:'+sx+'px;top:'+sy+'px;width:'+sz+'px;height:'+sz+'px;background:'+colors[Math.floor(Math.random()*3)]+';box-shadow:0 0 '+(sz*3)+'px '+colors[Math.floor(Math.random()*3)]+';animation-delay:'+(i*50)+'ms';
+          document.body.appendChild(sp);
+          setTimeout(function(){sp.remove()},800);
+        }
+      },{passive:true});
+    }
+
+    // ===== 3D TILT CARDS =====
+    if(!isTouch){
+      // Desktop mouse tilt
+      document.querySelectorAll('.tilt-card').forEach(function(card){
+        card.addEventListener('mousemove',function(e){
+          var rect = card.getBoundingClientRect();
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+          var cx = rect.width/2;
+          var cy = rect.height/2;
+          var rotateX = ((y-cy)/cy)*-6;
+          var rotateY = ((x-cx)/cx)*6;
+          card.style.transform = 'perspective(800px) rotateX('+rotateX+'deg) rotateY('+rotateY+'deg) translateY(-4px)';
+          card.style.boxShadow = '0 '+(15+rotateX)+'px '+(40+Math.abs(rotateY)*2)+'px rgba(0,0,0,.3), 0 0 '+(30+Math.abs(rotateY)*3)+'px rgba(212,175,55,'+(0.05+Math.abs(rotateY)*.01)+')';
+          var shine = card.querySelector('.tilt-shine');
+          if(shine){
+            shine.style.setProperty('--mx',(x/rect.width*100)+'%');
+            shine.style.setProperty('--my',(y/rect.height*100)+'%');
+            shine.style.opacity='1';
+          }
+        });
+        card.addEventListener('mouseleave',function(){
+          card.style.transform = '';
+          card.style.boxShadow = '';
+          var shine = card.querySelector('.tilt-shine');
+          if(shine) shine.style.opacity='0';
+        });
+      });
+    } else {
+      // Mobile: tap glow + sweep + gyroscope tilt
+      document.querySelectorAll('.tilt-card').forEach(function(card){
+        card.addEventListener('touchstart',function(e){
+          card.classList.add('tap-glow');
+          card.classList.add('sweep-active');
+          // Ripple at touch point
+          var t = e.touches[0];
+          if(t){
+            var rect = card.getBoundingClientRect();
+            var rp = document.createElement('div');
+            rp.className = 'touch-ripple';
+            var rx = t.clientX - rect.left;
+            var ry = t.clientY - rect.top;
+            rp.style.cssText = 'left:'+(rx-10)+'px;top:'+(ry-10)+'px;width:20px;height:20px';
+            card.style.position='relative';
+            card.appendChild(rp);
+            setTimeout(function(){rp.remove()},600);
+            // Move shine to touch position
+            var shine = card.querySelector('.tilt-shine');
+            if(shine){
+              shine.style.setProperty('--mx',(rx/rect.width*100)+'%');
+              shine.style.setProperty('--my',(ry/rect.height*100)+'%');
+            }
+          }
+        },{passive:true});
+        card.addEventListener('touchend',function(){
+          setTimeout(function(){
+            card.classList.remove('tap-glow');
+            card.classList.remove('sweep-active');
+          },600);
+        },{passive:true});
+      });
+
+      // Gyroscope 3D tilt for mobile (if supported)
+      if(window.DeviceOrientationEvent){
+        var gyroCards = document.querySelectorAll('.tilt-card');
+        var gyroEnabled = false;
+        function handleGyro(e){
+          if(!gyroEnabled) return;
+          var beta = Math.max(-15, Math.min(15, (e.beta||0) - 45));
+          var gamma = Math.max(-15, Math.min(15, e.gamma||0));
+          var rx = (beta/15)*3;
+          var ry = (gamma/15)*3;
+          gyroCards.forEach(function(card){
+            var rect = card.getBoundingClientRect();
+            var inView = rect.top < window.innerHeight && rect.bottom > 0;
+            if(inView){
+              card.style.transform = 'perspective(600px) rotateX('+rx+'deg) rotateY('+ry+'deg)';
+            }
+          });
+        }
+        // Enable gyro after first scroll
+        window.addEventListener('scroll',function onFirstScroll(){
+          gyroEnabled = true;
+          document.body.classList.add('gyro-active');
+          window.removeEventListener('scroll',onFirstScroll);
+        },{passive:true,once:true});
+        window.addEventListener('deviceorientation',handleGyro,{passive:true});
+      }
+    }
+
+    // ===== PARALLAX SCROLL EFFECT (works on all devices) =====
+    (function(){
+      var heroOrbs = document.querySelectorAll('.hero-orb');
+      var heroContent = document.querySelector('.hero-content');
+      var storyDots = document.querySelectorAll('.story-dot');
+      if(heroOrbs.length){
+        var lastPSY = 0;
+        var pTicking = false;
+        function parallaxUpdate(){
+          var sy = lastPSY;
+          var wh = window.innerHeight;
+          if(sy < wh*1.5){
+            var f = sy * (isTouch ? .15 : .3);
+            heroOrbs[0].style.transform = 'translate('+(Math.sin(sy*.002)*(isTouch?8:15))+'px, '+(-f*(isTouch?.2:.4))+'px)';
+            if(heroOrbs[1]) heroOrbs[1].style.transform = 'translate('+(Math.cos(sy*.002)*(isTouch?6:15))+'px, '+(-f*(isTouch?.12:.25))+'px)';
+            if(heroContent) heroContent.style.transform = 'translateY('+(sy*(isTouch?.08:.15))+'px)';
+          }
+          // Story dots parallax
+          storyDots.forEach(function(dot){
+            var rect = dot.getBoundingClientRect();
+            if(rect.top < wh && rect.bottom > 0){
+              var progress = (wh - rect.top)/(wh + rect.height);
+              dot.style.transform = 'scale('+(1 + progress*.08)+') rotate('+(progress*10)+'deg)';
+            }
+          });
+          pTicking = false;
+        }
+        window.addEventListener('scroll',function(){
+          lastPSY = window.pageYOffset;
+          if(!pTicking){requestAnimationFrame(parallaxUpdate);pTicking=true;}
+        },{passive:true});
+      }
+    })();
+
+    // ===== COUNTDOWN FLIP EFFECT =====
+    (function(){
+      var prev = {};
+      var origSetNum = setNum;
+      setNum = function(id, v) {
+        var nv = String(v).padStart(2,'0');
+        if(prev[id] && prev[id] !== nv){
+          var el = document.getElementById(id);
+          if(el){
+            el.classList.remove('flip');
+            void el.offsetWidth;
+            el.classList.add('flip');
+          }
+        }
+        prev[id] = nv;
+        origSetNum(id, v);
+      };
+    })();
+
+    // ===== HERO MOUSE PARALLAX (desktop) =====
+    if(!isTouch){
+      var hero = document.getElementById('hero');
+      if(hero){
+        hero.addEventListener('mousemove',function(e){
+          var rect = hero.getBoundingClientRect();
+          var x = (e.clientX - rect.left)/rect.width - .5;
+          var y = (e.clientY - rect.top)/rect.height - .5;
+          var orbs = hero.querySelectorAll('.hero-orb');
+          if(orbs[0]) orbs[0].style.transform='translate('+(x*30)+'px,'+(y*20)+'px) scale(1.05)';
+          if(orbs[1]) orbs[1].style.transform='translate('+(-x*25)+'px,'+(-y*15)+'px) scale(.98)';
+        });
+      }
+    }
+
+    // ===== Update reveal observer to include new 3D classes =====
+    if('IntersectionObserver' in window){
+      var obs3d = new IntersectionObserver(function(entries){
+        for(var i=0;i<entries.length;i++){
+          if(entries[i].isIntersecting){
+            entries[i].target.classList.add('vis');
+            obs3d.unobserve(entries[i].target);
+          }
+        }
+      },{threshold:0.05,rootMargin:'0px 0px -20px 0px'});
+      document.querySelectorAll('.reveal-3d,.reveal-flip,.reveal-flip-r,.reveal-zoom').forEach(function(el){obs3d.observe(el)});
+    }else{
+      document.querySelectorAll('.reveal-3d,.reveal-flip,.reveal-flip-r,.reveal-zoom').forEach(function(el){el.classList.add('vis')});
+    }
   </script>
 </body>
 </html>
